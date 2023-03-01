@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(63, 62, 62);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.expense {
+  display: flex;
+  margin: 0.8rem;
+  margin-top: 60px;
+  gap: 14rem;
+  justify-content: center;
+  width: 98%;
+  border-radius: 10px;
+  height: 6rem;
+  background-color: grey;
+}
+.car-insurance {
+  color: white;
+  margin-top: 0;
+  font-size: 3rem;
+}
+.expense-item {
+  width: 150px;
+  height: 50px;
+  background-color: blueviolet;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 10px;
+  padding-bottom: 0;
+  border: 2px solid white;
+}
