@@ -1,9 +1,16 @@
 import NewExpense from "./NewExpense";
 
 const ExpenseForm = () => {
+  const saveHandler = (getData) => {
+    const ExpenseData = {
+      ...getData,
+      id: Math.random().toString(),
+    };
+    console.log(ExpenseData);
+  };
   return (
     <div>
-      <NewExpense></NewExpense>
+      <NewExpense onSaveHandler={saveHandler}></NewExpense>
     </div>
   );
 };

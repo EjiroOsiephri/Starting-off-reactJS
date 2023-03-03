@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-const NewExpense = () => {
+import ExpenseForm from "./expenseForm";
+const NewExpense = (props) => {
   const [newtitle, setNewTitle] = useState("");
   const [newNumber, setNewnumber] = useState("");
   const [newdate, setdate] = useState("");
@@ -20,10 +21,12 @@ const NewExpense = () => {
       Number: newNumber,
       date: new Date(newdate),
     };
-    console.log(ExpenseData);
+
     setNewTitle("");
     setNewnumber("");
     setdate("");
+
+    props.onSaveHandler(ExpenseData);
   }
 
   return (
