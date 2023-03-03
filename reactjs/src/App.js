@@ -2,6 +2,7 @@
 // import "./App.css";
 import "./components/Expenseitem";
 import ExpenseItem from "./components/Expenseitem";
+import ExpenseForm from "./components/NewExpense/expenseForm";
 
 function App() {
   const expense = [
@@ -25,6 +26,7 @@ function App() {
   return (
     <div className="App">
       <div>
+        <ExpenseForm></ExpenseForm>
         <ExpenseItem
           title={expense[0].title}
           date={expense[0].date}
